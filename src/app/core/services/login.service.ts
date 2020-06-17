@@ -14,4 +14,8 @@ export class LoginService {
   login(credentials):Observable<any> {
     return this.http.post(env.API_URL+'signin',credentials)
   }
+
+  toRegister(user) :Observable<any>{
+    return this.http.post(env.API_URL+'signup',user)
+  }
 }

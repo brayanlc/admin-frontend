@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>{{ action }} usuario</h1>
+<form [formGroup]="form" mat-dialog-content>
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" />
+  </mat-form-field>
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Contraseña</mat-label>
+    <input matInput formControlName="password" />
+  </mat-form-field>
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Rol</mat-label>
+    <mat-select formControlName="rol">
+      <mat-option value="Administrador">Administrador</mat-option>
+      <mat-option value="Desarrollador">Desarrollador</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="onSubmit()">Guardar</button>
+</div>

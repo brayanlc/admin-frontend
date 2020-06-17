@@ -1,1 +1,17 @@
-<p>login works!</p>
+<div class="container mat-elevation-z8">
+  <h1>Iniciar sesión</h1>
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Correo</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+    <mat-form-field class="w-100" appearance="outline">
+      <mat-label>Contraseña</mat-label>
+      <input type="password" matInput formControlName="password" />
+    </mat-form-field>
+    <div>
+      <button type="submit" mat-raised-button>Ingresar</button>
+      <button type="button" mat-raised-button>Crea una cuenta</button>
+    </div>
+  </form>
+</div>

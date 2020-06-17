@@ -1,0 +1,10 @@
+.container {
+  width: 300px;
+  padding: 15px;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

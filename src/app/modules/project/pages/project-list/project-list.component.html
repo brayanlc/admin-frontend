@@ -1,4 +1,4 @@
-<button mat-raised-button (click)="createUserDialog()">Crear Usuario</button>
+<button mat-raised-button *appHasPermission (click)="createUserDialog()">Crear Usuario</button>
 <table mat-table [dataSource]="projects$ | async">
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>Nombre</th>
@@ -50,7 +50,7 @@
           <mat-icon>edit</mat-icon>
           <span>Editar</span>
         </button>
-        <button mat-menu-item (click)="deleteUser(element._id)">
+        <button mat-menu-item *appHasPermission (click)="deleteUser(element._id)">
           <mat-icon>delete</mat-icon>
           <span>Eliminar</span>
         </button>

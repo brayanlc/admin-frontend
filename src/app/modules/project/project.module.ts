@@ -11,6 +11,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
+import {HasPermissionModule} from "../../core/directives/has-permission/has-permission.module";
 
 @NgModule({
   declarations: [ProjectListComponent, ProjectCreateComponent],
@@ -25,6 +26,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatSelectModule,
     MatMenuModule,
     MatIconModule,
+    HasPermissionModule
   ],
 })
 export class ProjectModule {}

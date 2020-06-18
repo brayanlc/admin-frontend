@@ -8,6 +8,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {HasPermissionModule} from "../core/directives/has-permission/has-permission.module";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HasPermissionModule
   ]
 })
 export class LayoutModule { }

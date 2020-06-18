@@ -2,9 +2,15 @@
   <mat-toolbar-row>
     <h1>Admin</h1>
     <span class="menu-spacer"></span>
-    <div>
-      <a mat-button [routerLink]="['/', menu.path]" *ngFor="let menu of menus">
-        {{ menu.title }}
+    <div class="ml-100">
+      <a mat-button routerLink="/projects" >
+        Proyectos
+      </a>
+      <a mat-button routerLink="/users" *appHasPermission>
+        Usuarios
+      </a>
+      <a mat-button (click)="logOut()">
+        Cerrar cesión
       </a>
     </div>
   </mat-toolbar-row>
